@@ -1,0 +1,6 @@
+# *__Text 1__*
+
+```{r, child=if (TRUE) c('../texts/_text1.qmd')}
+```
+
+

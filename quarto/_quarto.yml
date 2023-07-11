@@ -1,0 +1,67 @@
+
+
+project:
+  type: website
+  output-dir: "_site"
+  preview:
+    port: 5000
+    browser: true
+  render:
+    - "*.qmd"
+  resources:
+    - "www/"
+    - "texts/"
+resources:
+  - "www/*.mp3"
+  - "texts/*.docx"
+  - "texts/*.pdf"
+
+#
+website:
+  title: "Quarto Website Debug"
+  reader-mode: false
+  page-navigation: false
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    border: true
+    center: |
+      Footnote.
+    # | ?
+  #
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Texts
+        menu:
+          - text: "*Text 1*"
+            href: tab_texts/text1.qmd
+  #
+  sidebar:
+    style: docked
+    pinned: true
+    alignment: left
+    border: true
+    contents:
+      - section: " "
+        contents:
+          - text: "__Text 1__"
+            href: tab_texts/text1.qmd
+#
+format:
+  html:
+    theme:
+      - journal
+    embed-resources: false
+    self-contained-math: false
+    standalone: true
+    toc: false
+    toc-location: left
+    toc-title: "Table of Contents"
+    page-layout: full
+    grid:
+      sidebar-width: 390px
+
+
