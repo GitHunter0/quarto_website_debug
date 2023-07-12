@@ -11,6 +11,7 @@ project:
   resources:
     - "www/"
     - "texts/"
+    - "tab_texts/"
 resources:
   - "www/*.mp3"
   - "texts/*.docx"

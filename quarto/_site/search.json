@@ -7,17 +7,17 @@
     "text": "Home text"
   },
   {
+    "objectID": "texts/text1_child.html",
+    "href": "texts/text1_child.html",
+    "title": "Quarto Website Debug",
+    "section": "",
+    "text": "Text 1 content H"
+  },
+  {
     "objectID": "tab_texts/text1.html",
     "href": "tab_texts/text1.html",
     "title": "Text 1",
     "section": "",
-    "text": "Text 1\nText 1 content A"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About the author",
-    "section": "",
-    "text": "About the author\n\nAbout content"
+    "text": "Text 1\n\nText 1 content F"
   }
 ]
