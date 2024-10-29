@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+reticulate::use_condaenv("py310")
+reticulate::py_discover_config()
+```
+
+
+```{python}
+import datar.all as d
+import pandas as pd
+
+df = pd.DataFrame({'x': [1,2,3]})
+print(d.glimpse(df, __ast_fallback="piping"))
+```
+
